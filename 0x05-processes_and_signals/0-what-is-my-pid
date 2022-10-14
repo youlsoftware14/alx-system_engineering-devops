@@ -1,0 +1,4 @@
+#!/bin/sh
+
+PID=$(ps -ef | grep abc | grep -v grep | awk '{print $2}')
+echo $PID
